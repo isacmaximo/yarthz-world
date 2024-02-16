@@ -1,0 +1,39 @@
+#distribuição quanto as fases:
+
+fase 1: (paba) (pabd) (pdba) (pdbd)
+          ok     ok     ok     ok
+
+
+
+fase 2: (paba) (pabd) (pdba) (pdbd)
+          ok     ok     ok     ok      
+
+
+
+fase 3: (paba) (pabd) (pdba) (pdbd) (pabae) (pdbae)
+          ok     ok     ok     ok     ok      ok  
+
+
+
+fase 4: (paba) (pabd) (pdba) (pdbd) (pabae) (pdbae)
+          ok     ok     ok     ok     ok      ok
+
+
+
+fase 5: (paba) (pabd) (pdba) (pdbd) (pabae) (pdbae)
+          ok     ok     ok     ok     ok      ok
+
+
+
+fase 6: (paba) (pabd) (pdba) (pdbd) (pabae) (pdbae)
+          ok     ok     ok     ok     ok      ok 
+
+
+
+fase 7: (paba) (pabd) (pdba) (pdbd) (paeba) (paebd) (paebae1) (paebae2) (pabae1) (pabae2) (pdbae1) (pdbae2)
+          ok     ok     ok     ok     ok      ok       ok         ok        ok       ok       ok       ok
+ 
+
+
+
+

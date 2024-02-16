@@ -1,0 +1,50 @@
+#tipos de ataque e defesa
+
+1 - quando o personagem ataca e o boss ataca------------------------------------(paba)
+    1.1 - dano do personagem no boss = personagem.ataque - boss.defesa  (se a defesa for maior então recebe o mínimo de dano (-1)) se for menor recebe a diferença
+    1.2 - dano do boss no personagem = boss.ataque - personagem.defesa (se a defesa for maior então recebe o mínimo de dano (-1)) se for menor recebe a diferença
+
+2 - quando o personagem ataca e o boss defende----------------------------------(pabd)
+    2.1 dano do personagem no boss = personagem.ataque - (boss.defesa + 1) (se a fesesa for maior então recebe o mínimo de dano (-1)) se for menor então recebe a diferença
+
+3 - quando o personagem defende e o boss ataca----------------------------------(pdba)
+    3.1 dano do boss no personagem = boss.ataque - (personagem.defesa + 1) (se a defesa for maior então recebe o mínimo de dano (-1)) se for menor então recebe a diferença 
+
+4 - quando o personagem defende e o boss defende--------------------------------(pdbd)
+    4.1 neste caso não acontece nada (não há danos)
+
+5 - quando o personagem ataca (especial) e o boss ataca-------------------------(paeba)
+    5.1 dano do personagem no boss = (personagem ataque + 2) - boss.defesa (se a defesa for maior então recebe o mínimo de dano (-1)) se for menor então recebe a diferença
+    5.2 dano do boss no personagem = boss.ataque - personagem.defesa (se a defesa for maior então recebe o mínimo de dano (-1)) se for menor então recebe a diferença
+
+6 - quando o personagem ataca (especial) e o boss defende-----------------------(paebd)
+    6.1 dano do personagem no boss = (personagem.ataque + 2) - (boss.defesa + 1) (se a defesa for maior então recebe o mínimo de dano (-1)) se for menor então recebe a diferença
+
+7 - quando o personagem ataca e o boss ataca (especial)-------------------------(pabae)
+    7.1 dano do pernonagem no boss = personagem.ataque - boss.defesa (se a defesa for maior então recebe o mínimo de dano (-1)) se for menor então recebe a diferença
+    7.2 dano do boss no personagem = (boss.ataque + 2) - personagem.defesa (se a defesa for maior então recebe o mínimo de dano (-1)) se for menor então recebe a diferença 
+
+8 - quando o personagem defende e o boss ataca (especial)-----------------------(pdbae)
+    8.1 dano do boss no personagem = (boss.ataque + 2) - (personagem.defesa + 1) (se a defesa for maior então recebe o mínimo de dano (-1)) se for menor então recebe a diferença
+
+9 - quando o personagem ataca e o boss ataca (especial 1)-----------------------(pabae1)
+    9.1 dano do personagem no boss = personagem.ataque - boss.defesa (se a defesa for maior então recebe o mínimo de dano (-1)) se for menor então recebe a diferença
+    9.2 dano do boss no personagem = (boss.ataque + 2) - personagem.defesa (se a defesa for maior então recebe o mínimo de dano (-1)) se for menor então recebe a diferença 
+    
+10 - quando o personagem ataca e o boss ataca (especial 2)-----------------------(pabae2)
+    10.1 dano do personagem no boss = personagem.ataque - boss.defesa (se a defesa for maior então recebe o mínimo de dano (-1)) se for menor então recebe a diferença
+    10.2 dano do boss no personagem = (boss.ataque + 2) - personagem.defesa (se a defesa for maior então recebe o mínimo de dano (-1)) se for menor então recebe a diferença 
+
+11 - quando o personagem ataca (especial) e o boss ataca (especial 1)-----------(paebae1)
+    11.1 dano do personagem no boss = (personagem.ataque + 2) - boss.defesa (se a defesa for maior então recebe o mínimo de dano (-1)) se for menor então recebe a diferença
+    11.2 dano do boss no personagem = (boss.ataque + 2) - personagem.defesa (se a defesa for maior então recebe o mínimo de dano (-1)) se for menor então recebe a diferença
+
+12 - quando o personagem ataca (especial) e o boss ataca (especial 2)-----------(paebae2)
+    12.1 dano do personagem no boss = (personagem.ataque + 2) - boss.defesa (se a defesa for maior então recebe o mínimo de dano (-1)) se for menor então recebe a diferença
+    12.2 dano do boss no personagem = (boss.ataque + 2) - personagem.defesa (se a defesa for maior então recebe o mínimo de dano (-1)) se for menor então recebe a diferença 
+     
+13 - quando o personagem defende e o boss ataca (especial 1)--------------------(pdbae1)
+    13.1 dano do boss no personagem = (boss.dano + 2) - personagem.defesa (se a defesa for maior então recebe o mínimo de dano (-1)) se for menor então recebe a diferença 
+
+14 - quando o personagem defende e o boss ataca  (especial 2)-------------------(pdbae2)
+    14.1 dano do boss no personagem = (boss.dano + 2) - personagem.defesa (se a defesa for maior então recebe o mínimo de dano (-1)) se for menor então recebe a diferença

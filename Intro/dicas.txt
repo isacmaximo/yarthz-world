@@ -1,0 +1,27 @@
+╔═══════════════════════════════════════════════════╗
+║                    COMO JOGAR                     ║
+╚═══════════════════════════════════════════════════╝
+╔═══════════════════════════════════════════════════╗
+║ ► Ao defender-se o dano que sofreu será reduzido  ║
+║                                                   ║
+║ ► Alguns chefes possuem ataques especiais         ║
+║                                                   ║
+║ ► Cuidado! Alguns chefes de fases conseguem te    ║
+║   envenenar!                                      ║
+║                                                   ║
+║ ► A defesa anula efeitos que modificam seu estado ║
+║   de saúde                                        ║
+║                                                   ║
+║ ► Os Chefes sempre dropam algo ao morrerem        ║
+║                                                   ║
+║ ► Os itens adquiridos dos chefes são armazenados  ║
+║   na bagagem !                                    ║
+║                                                   ║
+║ ► Use sabiamente os itens adquiridos durante o    ║
+║   jogo!                                           ║
+║                                                   ║
+║ ► Os antidotos servem para anular o efeito        ║
+║   de envenenamento                                ║
+║                                                   ║
+║ ► As poções recuperam + 10 de vida do personagem  ║
+╚═══════════════════════════════════════════════════╝

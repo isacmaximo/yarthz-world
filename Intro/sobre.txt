@@ -1,0 +1,17 @@
+╔═══════════════════════════════════════════════════╗
+║                   SOBRE O JOGO                    ║
+╚═══════════════════════════════════════════════════╝
+╔═══════════════════════════════════════════════════╗
+║ ► O jogo é um Rpg de turno com a historia em um   ║
+║   formato de Isekai (Transição de mundos).        ║
+║                                                   ║
+║ ► A historia é totalmente original.               ║
+║                                                   ║
+║ ► O Historia possui algumas referencias de outras ║
+║   obras com algumas modificações                  ║
+║                                                   ║
+║ ► Desenvolvedores: Isac Maximo e Luiz Felipe      ║
+║                                                   ║
+║ ► O jogo possui uma mecanica de animação baseada  ║
+║   em .TXT com caracteres ASCII                    ║
+╚═══════════════════════════════════════════════════╝
