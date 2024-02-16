@@ -301,11 +301,13 @@ void escolher_nome(char *nome){ //funçãode escolher o nome do personagem
                     confirmar = 'o';
                 }
                 else{
+                    system("cls");
                     void invalido();
                 }
 
             }
             else{
+                system("cls");
                 void invalido();
             }
             
@@ -317,32 +319,19 @@ void escolher_nome(char *nome){ //funçãode escolher o nome do personagem
 
 
 void menu_fase(int fase){ //função que contém o menu das fases
+    char nome_personagem[10];
 
+    int j = 0;
+    for (int i = 0; personagem.nome[i] != '\0'; i++) {
+        if (personagem.nome[i] != ' ' && personagem.nome[i] != '\n') {
+            nome_personagem[j++] = personagem.nome[i];
+        }
+    }
+    nome_personagem[j] = '\0';
+    
     //condições de nome
     printf("╔═══════════════════════════════╦════════════════════════════════╗\n");
-    //condições quanto ao tamanho dos nomes
-    if (strlen(personagem.nome) == 10)
-    printf("║           %s          ║              Boss              ║\n", personagem.nome);
-    else if (strlen(personagem.nome) == 9)
-    printf("║           %s           ║              Boss              ║\n", personagem.nome);
-    else if (strlen(personagem.nome) == 8)
-    printf("║            %s           ║              Boss              ║\n", personagem.nome);
-    else if (strlen(personagem.nome) == 7)
-    printf("║            %s            ║              Boss              ║\n", personagem.nome);
-    else if (strlen(personagem.nome) == 6)
-    printf("║             %s            ║              Boss              ║\n", personagem.nome);
-    else if (strlen(personagem.nome) == 5)
-    printf("║             %s             ║              Boss              ║\n", personagem.nome);
-    else if (strlen(personagem.nome) == 4)
-    printf("║             %s              ║              Boss              ║\n", personagem.nome);
-    else if (strlen(personagem.nome) == 3)
-    printf("║              %s              ║              Boss              ║\n", personagem.nome);
-    else if (strlen(personagem.nome) == 2)
-    printf("║               %s              ║              Boss              ║\n", personagem.nome);
-     else if (strlen(personagem.nome) == 1)
-    printf("║               %s               ║              Boss              ║\n", personagem.nome);
-    
-
+    printf("║  %-29s║  %-30s║\n", nome_personagem, "Boss");
     printf("╠═══════════════════════════════╬════════════════════════════════╣\n");
     printf("║                               ║                                ║\n");
     //condições da vida
@@ -778,13 +767,13 @@ int main(){ //principal
                 escolher_nome(nome_j); //função que escolhe o nome
                 system("cls");
 
-                substitui_nome("historia/intro.txt"); //história antes da fase 1
-                sleep(5);
-                system("cls");
+                //substitui_nome("historia/intro.txt"); //história antes da fase 1
+                //sleep(5);
+                //system("cls");
 
-                substitui_nome("historia/hfase1.txt"); //história antes da fase 1
-                sleep(5);
-                system("cls");
+                //substitui_nome("historia/hfase1.txt"); //história antes da fase 1
+                //sleep(5);
+                //system("cls");
 
                 //turno
                 turno = 0;
@@ -1060,9 +1049,9 @@ int main(){ //principal
                 //adição de ítens
                 adcionar("(+) Porção", 5, 0); //adcionada a porção
 
-                substitui_nome("historia/hfase2.txt"); //história antes da fase 2
-                sleep(5);
-                system("cls");
+                //substitui_nome("historia/hfase2.txt"); //história antes da fase 2
+                //sleep(5);
+                //system("cls");
 
                 //abertura da fase 2
                 char stg2_1[] = "fase2/stg2_1.txt";
@@ -1323,9 +1312,9 @@ int main(){ //principal
                 //adição de ítens
                 adcionar("(^) Antídoto", 1, 0);
 
-                substitui_nome("historia/hfase3.txt"); //história antes da fase 3
-                sleep(5);
-                system("cls");
+                //substitui_nome("historia/hfase3.txt"); //história antes da fase 3
+                //sleep(5);
+                //system("cls");
 
                 //abertura da fase 3
                 char stg3_1[] = "fase3/stg3_1.txt";
@@ -1659,9 +1648,9 @@ int main(){ //principal
                 adc_qtd("(^) Antídoto");
                 adc_qtd("(+) Porção");
 
-                substitui_nome("historia/hfase4.txt"); //história antes da fase 4
-                sleep(5);
-                system("cls");
+                // substitui_nome("historia/hfase4.txt"); //história antes da fase 4
+                // sleep(5);
+                // system("cls");
 
                 //abertura da fase 4
                 char stg4_1[] = "fase4/stg4_1.txt";
@@ -1989,9 +1978,9 @@ int main(){ //principal
                 //adição de ítens
                 adcionar("(º) Bracelete Imperial", 1, 0);
 
-                substitui_nome("historia/hfase5.txt"); //história antes da fase 5
-                sleep(5);
-                system("cls");
+                // substitui_nome("historia/hfase5.txt"); //história antes da fase 5
+                // sleep(5);
+                // system("cls");
 
                 //abertura da fase
                 char stg5_1[] = "fase5/stg5_1.txt";
@@ -2338,9 +2327,9 @@ int main(){ //principal
                 adc_qtd("(+) Porção");
                 adc_qtd("(^) Antídoto");
 
-                substitui_nome("historia/hfase6.txt"); //história antes da fase 6
-                sleep(5);
-                system("cls");
+                // substitui_nome("historia/hfase6.txt"); //história antes da fase 6
+                // sleep(5);
+                // system("cls");
 
                 //abertura da fase 6
                 char stg6_1[] = "fase6/stg6_1.txt";
@@ -2685,9 +2674,9 @@ int main(){ //principal
                 adc_qtd("(+) Porção");
                 adc_qtd("(+) Porção");
 
-                substitui_nome("historia/hfase7.txt"); //história antes da fase 7
-                sleep(5);
-                system("cls");
+                // substitui_nome("historia/hfase7.txt"); //história antes da fase 7
+                // sleep(5);
+                // system("cls");
 
 
                 //abertura da fase 7
@@ -3219,9 +3208,9 @@ int main(){ //principal
                 usleep(3000000);
                 system("cls");
 
-                substitui_nome("historia/desfecho.txt"); //desfecho
-                sleep(5);
-                system("cls");
+                // substitui_nome("historia/desfecho.txt"); //desfecho
+                // sleep(5);
+                // system("cls");
 
                 printf("╔════════════════════════════════════════════════════════════════╗\n");
                 printf("║                               FIM                              ║\n");
