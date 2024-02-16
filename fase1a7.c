@@ -301,11 +301,13 @@ void escolher_nome(char *nome){ //funçãode escolher o nome do personagem
                     confirmar = 'o';
                 }
                 else{
+                    system("cls");
                     void invalido();
                 }
 
             }
             else{
+                system("cls");
                 void invalido();
             }
             
@@ -318,31 +320,19 @@ void escolher_nome(char *nome){ //funçãode escolher o nome do personagem
 
 void menu_fase(int fase){ //função que contém o menu das fases
 
+    char nome_personagem[10];
+
+    int j = 0;
+    for (int i = 0; personagem.nome[i] != '\0'; i++) {
+        if (personagem.nome[i] != ' ' && personagem.nome[i] != '\n') {
+            nome_personagem[j++] = personagem.nome[i];
+        }
+    }
+    nome_personagem[j] = '\0';
+    
     //condições de nome
     printf("╔═══════════════════════════════╦════════════════════════════════╗\n");
-    //condições quanto ao tamanho dos nomes
-    if (strlen(personagem.nome) == 10)
-    printf("║           %s          ║              Boss              ║\n", personagem.nome);
-    else if (strlen(personagem.nome) == 9)
-    printf("║           %s           ║              Boss              ║\n", personagem.nome);
-    else if (strlen(personagem.nome) == 8)
-    printf("║            %s           ║              Boss              ║\n", personagem.nome);
-    else if (strlen(personagem.nome) == 7)
-    printf("║            %s            ║              Boss              ║\n", personagem.nome);
-    else if (strlen(personagem.nome) == 6)
-    printf("║             %s            ║              Boss              ║\n", personagem.nome);
-    else if (strlen(personagem.nome) == 5)
-    printf("║             %s             ║              Boss              ║\n", personagem.nome);
-    else if (strlen(personagem.nome) == 4)
-    printf("║             %s              ║              Boss              ║\n", personagem.nome);
-    else if (strlen(personagem.nome) == 3)
-    printf("║              %s              ║              Boss              ║\n", personagem.nome);
-    else if (strlen(personagem.nome) == 2)
-    printf("║               %s              ║              Boss              ║\n", personagem.nome);
-     else if (strlen(personagem.nome) == 1)
-    printf("║               %s               ║              Boss              ║\n", personagem.nome);
-    
-
+    printf("║  %-29s║  %-30s║\n", nome_personagem, "Boss");
     printf("╠═══════════════════════════════╬════════════════════════════════╣\n");
     printf("║                               ║                                ║\n");
     //condições da vida
